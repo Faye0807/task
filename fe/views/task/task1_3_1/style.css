@@ -1,0 +1,177 @@
+@charset 'utf-8';
+
+/*利用负的margin*/
+
+body{
+	margin:0;
+	padding: 20px;
+}
+
+section{
+	border:#999 solid 1px;
+	background: #eee;
+	padding: 20px;
+	height: 100%;
+	float: left;  /*可以让页面高度随子元素最长高度进行变化*/
+}
+
+img{
+	width: 80px;
+	height: 80px;
+}
+.img{
+	margin-bottom: 20px;
+}
+
+.text{
+	background: #fff;
+	padding: 20px;
+}
+#center{
+	float: left;
+	width: 100;
+	margin-left:220px;
+	margin-right: 140px;
+}
+
+#left{
+	width: 200px;
+	float: left;
+	margin-left: -100%;  /*负值为-100%从而让其靠页面最左边*/
+}
+
+#leftContent img{
+	vertical-align: top;
+	margin-right: 10px;
+}
+#right{
+	float: left;
+	width: 120px;
+	margin-left: -120px;  /*负值等于其整个宽度的值*/
+}
+
+
+
+
+
+/*浮动布局*/
+
+
+
+/*body{
+	margin: 0;
+	padding: 20px;
+	
+}
+
+section{
+	float:left;   让section高度岁最高子元素高度变化  也可以用 overflow：hidden 
+	padding: 20px;
+	background: #eee;
+
+}
+
+
+
+div{
+	border: #999 solid 1px;
+	padding: 20px;
+	background: #fff;
+}
+
+img{
+	width: 80px;
+	height: 80px;
+	vertical-align: top;   照片与文字顶部对齐
+	margin-right: 10px;
+}
+
+#left{
+	width: 160px;
+	float: left;
+}
+
+#right{
+	width: 80px;
+	float: right;
+	
+}
+.img{
+	margin-bottom: 20px;
+}
+
+#center{
+	
+	margin-left: 220px;
+	margin-right: 140px;
+}
+*/
+
+
+/*绝对定位*/
+
+
+/*body{
+	margin: 0;
+	height: 100%;
+	padding: 20px;
+	background: #666;
+}
+section{
+	padding: 20px;
+	position: static;
+	background: #eee;
+	border: #999 solid 1px;
+}
+
+#left,#right{
+	position: absolute;
+	border: #999 solid 1px;
+
+}
+
+img{
+	width: 80px;
+	height: 80px;
+}
+
+#left{
+	left: 40px;
+	width: 160px;
+	padding: 20px;
+	border: green solid 1px;
+	
+}
+
+#left img{
+	width: 80px;
+	height: 80px;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+
+#center{
+	padding: 20px;
+	border: #999 solid 1px;
+	margin-left:244px;
+	margin-right: 144px;
+}
+
+
+#right{
+	top: 40px;
+	width: 80px;
+	right: 40px;
+	padding: 20px;
+}
+
+
+#right .img{
+	margin-bottom: 20px;
+}*/
+
+
+
+
+
