@@ -1,0 +1,42 @@
+
+div{
+  margin: 100px;
+  text-align: center;
+  color: #fff;
+  background-image: linear-gradient(left,#ff0000,#ffa500 25%, #ffff00 50%,#ffa500 75%, #ff0000);
+  background-image: -webkit-linear-gradient(left,#ff0000,#ffa500 25%, #ffff00 50%,#ffa500 75%, #ff0000);
+  animation: position 4s linear infinite;
+  -webkit-animation: position 4s linear infinite;
+  background-size: 200% 100%;
+  /* background-size 给出背景多余位置让其移动 */
+  /* -webkit-text-fill-color: transparent; */
+  /* -webkit-background-clip: text; */
+}
+
+@keyframes position {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+/* 
+
+div{display: inline-block;
+  color: black;
+  font-size: 10em;
+  background-image: -webkit-linear-gradient(left, #147B96, #E6D205 25%, #147B96 50%, #E6D205 75%, #147B96);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-background-size: 200% 100%;
+  -webkit-animation: masked-animation 4s infinite linear;
+}
+
+
+@-webkit-keyframes masked-animation {
+  0%  { background-position: 0 0;}
+  100% { background-position: -100% 0;}
+}
+ */

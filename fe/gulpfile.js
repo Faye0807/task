@@ -5,7 +5,7 @@ var webserver = require('gulp-webserver');
 gulp.task('demo', function() {
     gulp.src('./')
     .pipe(webserver({
-			port: 80,
+			port: 8080,
 			livereload: true,
 			directoryListing: true,
 			open: true
