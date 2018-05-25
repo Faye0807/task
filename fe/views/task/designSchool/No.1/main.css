@@ -8,6 +8,13 @@ div{
   animation: position 4s linear infinite;
   -webkit-animation: position 4s linear infinite;
   background-size: 200% 100%;
+  background-repeat: round; 
+  /* 
+    让背景色滚动的时候没有卡顿 （卡顿其实是背景的颜色内有空白引起的） 
+    解决卡段的方法还有把background-size x方向调大，比如
+    background-size： 1000% 100%；
+    这样看起来卡顿现象几乎消失
+  */
   /* background-size 给出背景多余位置让其移动 */
   /* -webkit-text-fill-color: transparent; */
   /* -webkit-background-clip: text; */
