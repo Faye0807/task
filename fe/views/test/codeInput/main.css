@@ -18,5 +18,9 @@
       width: 50px;
       height: 50px;
       line-height: 50px;
+      vertical-align: middle;
+      /* 垂直对齐属性不添加的话，在li标签有内容的时候，
+      会因为基线 对齐问题待确定 而上下跳动 
+      添加该属性后，元素在填充内容后才固定不动*/
       border: 1px solid #999;
     }
