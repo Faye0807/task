@@ -1,0 +1,22 @@
+
+    input{
+      -webkit-appearance: none;
+      width: 0;
+      height: 0;
+      border: none;
+      overflow: hidden;
+    }
+    ul,li ,input{
+      margin: 0;
+      padding: 0;
+    }
+    .code-box{
+      text-align: center;
+    }
+    ul li{
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      border: 1px solid #999;
+    }

@@ -1,1 +1,14 @@
-@import './../../static/css/commen.css'
+@import './../../static/css/commen.css';
+
+.bfc{
+  background: yellow;
+}
+.bfc p {
+  margin: 30px;
+  background: green;
+}
+.left{
+  float: left;
+  height: 200px;
+  background: red;
+}
