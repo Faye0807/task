@@ -1,3 +1,7 @@
+
+var canvasDom = document.createElement('canvas');
+canvasDom.id = 'canvas';
+document.body.appendChild(canvasDom);
 var canvas = document.querySelector('#canvas');
 var img = document.querySelector('#img');
 var imageData, data,
