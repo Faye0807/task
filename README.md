@@ -1,2 +1,2 @@
 # task
-日常联系demo
+日常练习demo
