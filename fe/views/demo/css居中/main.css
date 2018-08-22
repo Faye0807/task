@@ -1,0 +1,133 @@
+.list-outer{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.list-item{
+  display: inline-block;
+  width: 100px;
+  background: #1246a4;
+}
+/* 父元素子元素大小均已知 */
+/* .block-outer{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  background: #999;
+  overflow: hidden;
+}
+.block-inner{
+  width: 80%;
+  height: 150px;
+  background: #1246a4;
+  margin: 75px 30px; 
+  margin padding 的半分比值是取自父元素大小的百分比
+  margin: 75px 10%;
+} */
+
+/* 父元素大小未知 */
+/* .block-outer{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  background: #999;
+}
+.block-inner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 150px;
+  margin: -75px -40%;
+  background: #1246a4;
+} */
+
+/* 父元素子元素大小未知 */
+/* .block-outer{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  background: #999;
+}
+.block-inner{
+  width: 80%;
+  height: 150px;
+  background: #1246a4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+} */
+
+/* .block-outer{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  background: #999;
+}
+.block-inner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background: #1246a4;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+} */
+/* .block-outer{
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  background: #999;
+  align-items: center;
+  justify-content: center
+}
+.block-inner{
+  width: 80%;
+  height: 150px;
+  background: #1246a4;
+} */
+.block-outer{
+  display: table-cell;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  background: #999;
+  vertical-align: middle;
+}
+.block-inner{
+  width: 80%;
+  height: 150px;
+  background: #1246a4;
+  margin: 0 auto;
+}
+
+/* .block-outer{
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+  background: #999;
+  text-align: center;
+}
+.block-outer::after{
+  display: inline-block;
+  content: '';
+  height: 100%;
+  vertical-align: middle;
+}
+.block-inner{
+  display: inline-block;
+  width: 80%;
+  height: 150px;
+  background: #1246a4;
+  vertical-align: middle;
+} */
