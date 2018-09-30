@@ -1,7 +1,14 @@
 body {
-  background: #999;
+  /* background: #999; */
   margin: 0;
 }
 body h2 {
   color: red;
+}
+ul, li, b, strong, p, a {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  text-decoration: none;
+  font-weight: normal;
 }

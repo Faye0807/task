@@ -1,0 +1,13 @@
+.list-outer{
+  display: flex;
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column; */
+  /* flex-wrap: wrap; */
+  flex-flow: wrap-reverse row-reverse ;
+}
+.list-outer li {
+  width: 30%;
+  list-style: none;
+  border: 1px solid #da8686;
+  /* flex: 1; */
+}
