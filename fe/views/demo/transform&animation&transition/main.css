@@ -1,0 +1,28 @@
+.rotatez{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: rotatez 3s linear infinite;
+}
+@keyframes rotatez {
+  from {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+.rotatex{
+  width: 300px;
+  height: 300px;
+  animation: rotatex 3s linear infinite;
+  transform-origin: top; 
+}
+@keyframes rotatex {
+  from {
+    transform: rotateX(0)
+  }
+  to {
+    transform: rotateX(360deg)
+  }
+}
