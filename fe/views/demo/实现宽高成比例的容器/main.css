@@ -1,0 +1,25 @@
+/* .item{
+  background: red;
+  width: 100vw;
+  height: 56.25vw;
+} */
+
+/* .item{
+  background: red;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+} */
+
+.item{
+  background: red;
+  /* 为了去掉div内容带来的填充高度  本次只是实例实现的要点；具体情况另做调整 */
+  font-size: 0;
+}
+.item::after{
+  display: block;
+  content: '';
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+}
