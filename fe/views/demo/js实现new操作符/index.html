@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>使用js实现new操作符</h1>
+  <h2>new操作符都干了些什么：</h2>
+  <p>1、一个继承自Foo.prototype的对象被创建</p>
+  <p>2、使用指定的参数调用构造函数Foo，并将this绑定到来自1的对象</p>
+  <p>3、构造函数返回对象</p>
+</body>
+<script>
+// const a = new Foo(prop);
+window.JSNEW = function (foo, prop) {
+    var newObj = Object.create( foo.prototype );
+    foo.call(newObj, prop);
+    return newObj;
+  }
+</script>
+</html>
