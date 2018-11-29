@@ -23,6 +23,7 @@ function defineReactive(data, key, value) {
     enumerable: true,
     configurable: true,
     get: () => {
+      // Compile方法调用 watch时候会添加
       if (Dep.target) {
         dep.addSub(Dep.target);
       }
@@ -101,6 +102,7 @@ Compile.prototype = {
     var reg = /^\{\{(.*)\}\}$/;
     var v_Reg = /^v-(.*)$/;
     childNodes.forEach((node) => {
+      // 文本节点
       if (node.nodeType === 3 && reg.test(node.nodeValue)){
         console.log(node);
         var prop = reg.exec(node.nodeValue)[1];

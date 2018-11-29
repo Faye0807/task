@@ -12,20 +12,24 @@
 //   document.body.appendChild(canvas)
 //  })
 
-document.body.onclick = function(e) {
-  console.log('===================================================');
-  var event = e || window.event;
-  console.log(event);
-  console.log(event.currentTarget);
-  console.log(event.target);
-}
+// document.body.onclick = function(e) {
+//   console.log('===================================================');
+//   console.log('e', e);
+//   var event = e || window.event;
+//   console.log(event);
+//   console.log(event.currentTarget);
+//   console.log(event.target);
+//   console.log('this', this);
+// }
 
-var htmlClick = function() {
-  console.log('===================================================');
-  console.log(window.event);
-  console.log(event.currentTarget);
-  console.log(event.target);
-  console.log(this);
-  // IE 阻止事件冒泡
-  event.cancelBubble = true;
-}
+// var htmlClick = function(e) {
+//   console.log('===================================================');
+//   console.log('e', e);
+//   console.log(window.event);
+//   console.log(event.currentTarget);
+//   console.log(event.target);
+//   console.log('this', this);
+//   // IE 阻止事件冒泡
+//   event.cancelBubble = true;
+// }
+console.log('jsjsjsj');
