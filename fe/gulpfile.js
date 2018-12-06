@@ -18,3 +18,18 @@ gulp.task('less', function() {
 	.pipe(less())
 	.pipe(gulp.dest('../src/static/css'))
 })
+// 获取项目目录结构
+var through = require('through2');
+var commands = [];
+// 获取路径并保存
+gulp.task('getPaths', function () {
+  return gulp.src('./views/!(task)/*/*.html')
+  .pipe(through.obj(function (file, enc, callback) {
+		// console.log('file', file)
+		this.push(file.path);
+		callback();
+	})).on('data', function (data) {
+		commands.push(data);
+		console.log(data); 
+	})
+});

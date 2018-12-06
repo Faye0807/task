@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>click点击穿透</title>
+  <style>
+    #click{
+      border: 1px solid red;
+    }
+    #red{
+      margin: 5px auto;
+      box-shadow: 0px 0px 1px 0px red inset;
+    }
+    .placeholder{
+      margin: 5px;
+      height: 1px;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="click">this is a click block</div>
+
+  <div id="red">this is a click block</div>
+  <hr>
+  <div class="placeholder"></div>
+  <script>
+    let div = document.querySelector('#click');
+    function lisener(event, string){
+      let e = window.event || event;
+      console.log(string);
+      // return false;
+      e.preventDefault();
+    }
+    // touchend事件后有300ms延时，用来判断 是否会有双击操作 与添加事件的顺序无关
+    //  另：为同一个元素添加同一事件注册多个事件处理程序的话，按照栈结构决定执行顺序，即后入先出
+    div.addEventListener('touchstart', () => lisener(event, 'touchstart'), false);
+    div.addEventListener('click', () => lisener(event, 'click'), false);
+    div.addEventListener('touchend', () => lisener(event, 'touchend'), false);
+  </script>
+</body>
+</html>
